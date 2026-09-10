@@ -1,0 +1,159 @@
+{
+  "duplicate_ride_ids": {
+    "duplicate_ride_id_groups": 0,
+    "duplicate_rows_total": 0,
+    "pct_rows_affected": 0.0,
+    "verdict": "PASS"
+  },
+  "missing_stations": {
+    "null_start_station_key": 1502107,
+    "null_end_station_key": 1550226,
+    "orphan_start_station_refs": 0,
+    "orphan_end_station_refs": 0,
+    "dim_station_missing_name": 0,
+    "dim_station_missing_coords": 0,
+    "pct_rows_affected": 29.0692,
+    "verdict": "FAIL"
+  },
+  "invalid_timestamps": {
+    "null_started_at": 0,
+    "null_ended_at": 0,
+    "started_at_gte_ended_at": 0,
+    "outside_program_date_range": 0,
+    "total_invalid_timestamp_rows": 0,
+    "pct_rows_affected": 0.0,
+    "verdict": "PASS"
+  },
+  "negative_durations": {
+    "non_positive_duration_rows": 0,
+    "duration_mismatch_vs_recomputed": 171,
+    "tolerance_minutes": 0.5,
+    "pct_rows_affected": 0.0021,
+    "verdict": "PASS"
+  },
+  "impossible_coordinates": {
+    "impossible_lat_lng_rows": 0,
+    "null_island_0_0_rows": 0,
+    "out_of_chicago_service_area_rows": 0,
+    "any_null_coordinate_rows": 9379,
+    "pct_rows_affected": 0.0,
+    "verdict": "PASS"
+  },
+  "null_percentages": {
+    "columns_over_5pct_null": [
+      {
+        "table": "fact_trip",
+        "column": "is_round_trip",
+        "null_pct": 29.069
+      },
+      {
+        "table": "fact_trip",
+        "column": "end_station_key",
+        "null_pct": 19.378
+      },
+      {
+        "table": "fact_trip",
+        "column": "start_station_key",
+        "null_pct": 18.776
+      }
+    ],
+    "max_null_pct": 29.069
+  },
+  "cardinality": {
+    "fact_trip": {
+      "ride_id": {
+        "n_unique": 8000000,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 1.0
+      },
+      "start_station_key": {
+        "n_unique": 3215,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0004
+      },
+      "end_station_key": {
+        "n_unique": 3205,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0004
+      },
+      "ride_type_key": {
+        "n_unique": 3,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0
+      },
+      "member_type_key": {
+        "n_unique": 2,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0
+      },
+      "start_hour": {
+        "n_unique": 24,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0
+      },
+      "day_of_week": {
+        "n_unique": 7,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0
+      },
+      "month_partition": {
+        "n_unique": 18,
+        "n_rows": 8000000,
+        "uniqueness_ratio": 0.0
+      }
+    },
+    "dimensions": {
+      "dim_station.station_id": 3943,
+      "dim_ride_type.rideable_type": 3,
+      "dim_member_type.member_casual": 2
+    }
+  },
+  "data_completeness": {
+    "completeness_by_column_pct": {
+      "ride_id": 100.0,
+      "started_at": 100.0,
+      "ended_at": 100.0,
+      "start_station_key": 81.22,
+      "end_station_key": 80.62,
+      "duration_minutes": 100.0
+    },
+    "overall_completeness_score": 93.64,
+    "missing_calendar_days_in_dim_date": 0,
+    "days_with_zero_rides": 426,
+    "date_range": [
+      "2024-01-01",
+      "2026-08-31"
+    ]
+  },
+  "data_consistency": {
+    "orphan_start_date_refs": 0,
+    "orphan_end_date_refs": 0,
+    "orphan_ride_type_refs": 0,
+    "orphan_member_type_refs": 0,
+    "day_of_week_mismatches": 1487538,
+    "month_partition_mismatches": 54089,
+    "start_date_key_mismatches": 1487538,
+    "is_round_trip_mismatches": 0,
+    "total_consistency_issues": 3029165,
+    "pct_rows_affected": 37.8646,
+    "verdict": "FAIL"
+  },
+  "quality_score": {
+    "dimension_scores": {
+      "Uniqueness": 100.0,
+      "Completeness": 93.64,
+      "Validity": 100.0,
+      "Consistency": 62.14,
+      "Accuracy": 97.6
+    },
+    "weights": {
+      "Uniqueness": 0.2,
+      "Completeness": 0.2,
+      "Validity": 0.25,
+      "Consistency": 0.2,
+      "Accuracy": 0.15
+    },
+    "overall_score": 90.8,
+    "overall_grade": "A"
+  }
+}

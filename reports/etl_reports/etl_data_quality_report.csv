@@ -11,7 +11,7 @@ file,status,error,rows_in,dropped_missing_ride_id,dropped_duplicate_ride_id,drop
 202410-divvy-tripdata.csv,success,,616281,0,0,0,13,0,0,11377,10769,594,14,616268,0
 202411-divvy-tripdata.csv,success,,335075,0,0,0,47,0,0,5632,5358,274,0,335028,0
 202412-divvy-tripdata.csv,success,,178372,0,0,0,0,0,0,3484,3343,141,0,178372,0
-202501-divvy-tripdata.csv,success,,137787,0,0,0,8,0,0,4019,3828,191,0,137779,0
+202501-divvy-tripdata.csv,success,,138689,0,0,0,1,0,0,2908,2839,69,0,138688,0
 202502-divvy-tripdata.csv,success,,151880,0,0,0,4,0,0,2777,2717,60,0,151876,0
 202503-divvy-tripdata.csv,success,,298155,0,0,0,13,0,0,6791,6540,251,0,298142,0
 202504-divvy-tripdata.csv,success,,371341,0,0,0,8,0,0,8165,7865,300,0,371333,0
@@ -23,9 +23,11 @@ file,status,error,rows_in,dropped_missing_ride_id,dropped_duplicate_ride_id,drop
 202510-divvy-tripdata.csv,success,,646039,0,0,0,5,0,0,17574,16975,599,0,646034,0
 202511-divvy-tripdata.csv,success,,356628,0,0,0,34,0,0,9833,9496,337,0,356594,0
 202512-divvy-tripdata.csv,success,,140534,0,0,0,2,0,0,4073,3948,125,0,140532,0
+202601-divvy-tripdata.csv,success,,137787,0,0,0,8,0,0,4019,3828,191,0,137779,0
 202602-divvy-tripdata.csv,success,,201450,0,0,0,1,0,0,4130,4013,117,0,201449,0
 202603-divvy-tripdata.csv,success,,317037,0,0,0,7,0,0,8517,8251,266,0,317030,0
 202604-divvy-tripdata.csv,success,,448252,0,0,0,8,0,0,12733,12379,354,0,448244,0
 202605-divvy-tripdata.csv,success,,653704,0,0,0,9,0,0,18298,17724,573,1,653695,0
 202606-divvy-tripdata.csv,success,,762550,0,0,0,19,0,0,21124,20444,679,1,762531,0
 202607-divvy-tripdata.csv,success,,869051,0,0,0,25,0,0,23023,22242,780,1,869026,0
+202608-divvy-tripdata.csv,success,,868191,0,0,0,22,0,0,21505,20832,670,3,868169,0
