@@ -1,3 +1,5 @@
 *.ini
 data/
 .DS_Store
+.ipynb_checkpoints/
+_pycache_/
