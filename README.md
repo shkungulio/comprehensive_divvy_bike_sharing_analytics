@@ -1,4 +1,4 @@
-# Divvy Trip Data Ingestion Pipeline
+# Comprehensive Divvy Bike Sharing Analytics.
 
 A reproducible Python pipeline for downloading, extracting, and organizing Divvy bike-share trip data for analytics and machine learning projects. The notebook is explicitly framed around the **CRISP-DM** methodology and focuses on the early lifecycle stages needed to build reliable downstream analysis workflows.
 
