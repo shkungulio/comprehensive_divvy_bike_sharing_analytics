@@ -1,3 +1,5 @@
+[![Project Cover](src/divvy_pipeline_banner.svg)]()
+
 # Comprehensive Divvy Bike-Sharing Analytics
 
 **An end-to-end data science pipeline — from raw public data to a production-style demand forecast — built on 15.6M+ real Divvy bike-share trips using the CRISP-DM methodology.**
