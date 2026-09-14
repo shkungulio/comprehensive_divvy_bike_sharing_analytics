@@ -54,24 +54,24 @@ Each notebook corresponds to one stage of the CRISP-DM process and can be run in
 
 ## The Pipeline (CRISP-DM Stages)
 
-### 1️⃣ Data Collection — `01_data_collection.ipynb`
+### 1. Data Collection — `01_data_collection.ipynb`
 Automatically discovers and downloads Divvy's publicly hosted monthly trip-data ZIP files (`divvy-tripdata.s3.amazonaws.com`) — no credentials required. The pipeline is **config-driven** (start year/month) and **idempotent**: it detects already-downloaded and already-extracted files and skips them, making re-runs safe and fast. Out of 96 available archives, 32 relevant monthly files were identified, downloaded, extracted, and consolidated into a unified `csv_master/` directory.
 
 **Tech:** `requests`, `BeautifulSoup`, `tqdm`, `zipfile`, `shutil`
 
-### 2️⃣ Database Design — `02_database_design.ipynb`
+### 2. Database Design — `02_database_design.ipynb`
 Designs a **PostgreSQL star schema** (`divvy_db.divvy`) purpose-built for analytical querying: four dimension tables (`dim_date`, `dim_station`, `dim_ride_type`, `dim_member_type`) and one fact table (`fact_trip`), enforced with foreign keys and `CHECK` constraints (e.g., positive duration, `started_at < ended_at`). Includes seven performance indexes and two analytical views — `vw_daily_rides` and `vw_station_flow` (net bike inflow/outflow per station, a direct signal for rebalancing operations). DDL execution is transactional and idempotent, and credentials are kept out of source control via an external config file.
 
 **Tech:** PostgreSQL, `psycopg2`, transactional DDL
 
-### 3️⃣ ETL Pipeline — `03_etl_pipeline.ipynb`
+### 3. ETL Pipeline — `03_etl_pipeline.ipynb`
 Cleans and loads all 32 monthly CSVs into the warehouse with defensive, production-style logic: drops rows with missing/duplicate `ride_id`s, parses timestamps, computes ride duration, and **flags rather than silently drops** anomalies (out-of-bounds coordinates, sub-60-second or 24-hour+ trips) via an `is_anomalous` column so downstream analysis can decide how to treat them. Dimension tables are resolved via mode/median station logic, and fact rows are bulk-loaded using PostgreSQL `COPY` through a staging table with `ON CONFLICT (ride_id) DO NOTHING` for guaranteed idempotency. Each file loads in its own transaction with rollback isolation, so one bad file can't corrupt the run.
 
 **Results:** 32/32 files processed successfully · 15,671,584 rows ingested → 15,670,541 rows after cleaning · 0 load failures · re-running the pipeline reloads 0 duplicate rows, confirming idempotency.
 
 **Post-load validation:** 974 calendar days · 3,943 stations · 3 ride types · 2 member types · 15,670,295 fact rows · **0 orphaned foreign keys** · data spans Jan 1, 2024 – Aug 31, 2026.
 
-### 4️⃣ Data Quality Assessment — `04_data_quality_assessment.ipynb`
+### 4. Data Quality Assessment — `04_data_quality_assessment.ipynb`
 An **independent audit** that re-derives quality metrics directly from the warehouse rather than trusting the ETL's self-reported counts — a best practice for catching silent pipeline bugs. Runs 9 checks across an 8-million-row sample: duplicate IDs, missing stations, invalid timestamps, negative durations, impossible coordinates, null rates, cardinality, completeness, and consistency.
 
 **Key results:**
@@ -87,10 +87,10 @@ An **independent audit** that re-derives quality metrics directly from the wareh
 
 A composite **0–100 Data Quality Score** is computed across five weighted dimensions (Uniqueness 20%, Completeness 20%, Validity 25%, Consistency 20%, Accuracy 15%) and rendered with a letter grade, alongside exported markdown/JSON/CSV reports and charts.
 
-### 5️⃣ Exploratory Analysis — `05_exploratory_analysis.ipynb`
+### 5. Exploratory Analysis — `05_exploratory_analysis.ipynb`
 Directly answers the project's business questions using the full, validated dataset (15,670,295 trips; 2.58% flagged anomalous; 31.45% missing station detail). See [Key Business Questions & Findings](#-key-business-questions--findings) below for results.
 
-### 6️⃣ Demand Forecasting — `06_demand_forecasting.ipynb`
+### 6. Demand Forecasting — `06_demand_forecasting.ipynb`
 Builds a daily ridership time series (974 days) and rigorously tests it before modeling: an Augmented Dickey-Fuller test confirms non-stationarity (p = 0.44), justifying differencing, while seasonal decomposition and ACF/PACF analysis confirm strong **weekly seasonality**. Four candidate models are benchmarked on a 28-day holdout:
 
 | Model | MAE | RMSE | MAPE |
@@ -139,7 +139,7 @@ The Prophet model forecasts system-wide daily ridership 28 days ahead with segme
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository and create a virtual environment:
    ```bash
@@ -170,7 +170,7 @@ The Prophet model forecasts system-wide daily ridership 28 days ahead with segme
 ## Author
 
 **Seif H. Kungulio**
-Data Analyst transitioning to Data Scientist / ML Engineer · M.S. Data Analytics, Maryville University of Saint Louis
+Data Analyst transitioning to Data Scientist / ML Engineer \n · M.S. Data Analytics, \n Maryville University of Saint Louis
 
 ---
 
