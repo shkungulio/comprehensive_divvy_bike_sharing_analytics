@@ -170,8 +170,9 @@ The Prophet model forecasts system-wide daily ridership 28 days ahead with segme
 ## Author
 
 **Seif H. Kungulio**
-Data Analyst transitioning to Data Scientist / ML Engineer·
+
 M.S. Data Analytics,
+
 Maryville University of Saint Louis
 
 ---
