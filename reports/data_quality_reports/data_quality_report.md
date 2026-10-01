@@ -1,10 +1,10 @@
 # Divvy Data Quality Report
-**Run timestamp (UTC):** 2026-09-30T08:45:13+00:00  
-**Rows assessed (fact_trip):** 8,000,000  
-**Overall Quality Score:** 90.8 / 100 (Grade A)
+**Run timestamp (UTC):** 2026-09-30T23:41:22+00:00  
+**Rows assessed (fact_trip):** 15,670,295  
+**Overall Quality Score:** 90.51 / 100 (Grade A)
 
 ## Table Row Counts
-- `fact_trip`: 8,000,000 rows
+- `fact_trip`: 15,670,295 rows
 - `dim_date`: 974 rows
 - `dim_station`: 3,943 rows
 - `dim_ride_type`: 3 rows
@@ -15,40 +15,40 @@
 | # | Check | Key Metric | % Rows Affected | Verdict |
 |---|---|---|---|---|
 | 1 | Duplicate ride IDs | 0 duplicate rows | 0.0% | PASS |
-| 2 | Missing stations | 3,052,333 null station refs | 29.0692% | FAIL |
+| 2 | Missing stations | 6,406,151 null station refs | 31.4451% | FAIL |
 | 3 | Invalid timestamps | 0 invalid rows | 0.0% | PASS |
-| 4 | Negative ride durations | 0 non-positive + 171 mismatched | 0.0021% | PASS |
+| 4 | Negative ride durations | 0 non-positive + 314 mismatched | 0.002% | PASS |
 | 5 | Impossible coordinates | 0 impossible + 0 (0,0) | 0.0% | PASS |
-| 9 | Data consistency | 3,029,165 issues | 37.8646% | FAIL |
+| 9 | Data consistency | 6,062,767 issues | 38.6896% | FAIL |
 
 ## Null Percentages (columns with any nulls)
 
 | table     | column            |   n_rows |   n_null |   null_pct |
 |:----------|:------------------|---------:|---------:|-----------:|
-| fact_trip | is_round_trip     |  8000000 |  2325538 |     29.069 |
-| fact_trip | end_station_key   |  8000000 |  1550226 |     19.378 |
-| fact_trip | start_station_key |  8000000 |  1502107 |     18.776 |
-| fact_trip | end_lat           |  8000000 |     9379 |      0.117 |
-| fact_trip | end_lng           |  8000000 |     9379 |      0.117 |
+| fact_trip | is_round_trip     | 15670295 |  4927540 |     31.445 |
+| fact_trip | end_station_key   | 15670295 |  3267187 |     20.85  |
+| fact_trip | start_station_key | 15670295 |  3138964 |     20.031 |
+| fact_trip | end_lat           | 15670295 |    16463 |      0.105 |
+| fact_trip | end_lng           | 15670295 |    16463 |      0.105 |
 
 ## Cardinality (fact_trip)
 
-|                   |   n_unique |   n_rows |   uniqueness_ratio |
-|:------------------|-----------:|---------:|-------------------:|
-| ride_id           |      8e+06 |    8e+06 |             1      |
-| start_station_key |   3215     |    8e+06 |             0.0004 |
-| end_station_key   |   3205     |    8e+06 |             0.0004 |
-| ride_type_key     |      3     |    8e+06 |             0      |
-| member_type_key   |      2     |    8e+06 |             0      |
-| start_hour        |     24     |    8e+06 |             0      |
-| day_of_week       |      7     |    8e+06 |             0      |
-| month_partition   |     18     |    8e+06 |             0      |
+|                   |       n_unique |      n_rows |   uniqueness_ratio |
+|:------------------|---------------:|------------:|-------------------:|
+| ride_id           |    1.56703e+07 | 1.56703e+07 |             1      |
+| start_station_key | 3900           | 1.56703e+07 |             0.0002 |
+| end_station_key   | 3937           | 1.56703e+07 |             0.0003 |
+| ride_type_key     |    3           | 1.56703e+07 |             0      |
+| member_type_key   |    2           | 1.56703e+07 |             0      |
+| start_hour        |   24           | 1.56703e+07 |             0      |
+| day_of_week       |    7           | 1.56703e+07 |             0      |
+| month_partition   |   32           | 1.56703e+07 |             0      |
 
 ## Data Completeness
 
-- Overall completeness score: **93.64%**
+- Overall completeness score: **93.19%**
 - Missing calendar days in `dim_date`: 0
-- Days with zero recorded rides: 426
+- Days with zero recorded rides: 0
 - Date range assessed: 2024-01-01 to 2026-08-31
 
 ## Data Quality Score Breakdown
@@ -56,9 +56,9 @@
 | dimension    |   score |   weight |
 |:-------------|--------:|---------:|
 | Uniqueness   |  100    |     0.2  |
-| Completeness |   93.64 |     0.2  |
+| Completeness |   93.19 |     0.2  |
 | Validity     |  100    |     0.25 |
-| Consistency  |   62.14 |     0.2  |
-| Accuracy     |   97.6  |     0.15 |
+| Consistency  |   61.31 |     0.2  |
+| Accuracy     |   97.42 |     0.15 |
 
-**Overall: 90.8 / 100 — Grade A**
+**Overall: 90.51 / 100 — Grade A**
