@@ -820,3 +820,109 @@
 2026-10-08 10:19:04,882 | INFO | Deleted /Users/shk/Projects/comprehensive_divvy_bike_sharing_analytics/data/downloads (604 MB)
 2026-10-08 10:19:04,983 | INFO | Deleted /Users/shk/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master (3,156 MB)
 2026-10-08 10:19:04,984 | INFO | Total space freed: 3,760 MB
+2026-10-08 10:41:51,619 | INFO | Discovered 32 source files in /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master
+2026-10-08 10:42:14,028 | INFO | 202401-divvy-tripdata.csv: cleaned 144,776 rows, inserted 0 new fact rows
+2026-10-08 10:42:41,249 | INFO | 202402-divvy-tripdata.csv: cleaned 223,136 rows, inserted 0 new fact rows
+2026-10-08 10:43:05,070 | INFO | 202403-divvy-tripdata.csv: cleaned 301,581 rows, inserted 0 new fact rows
+2026-10-08 10:43:27,958 | INFO | 202404-divvy-tripdata.csv: cleaned 414,837 rows, inserted 0 new fact rows
+2026-10-08 10:43:55,906 | INFO | 202405-divvy-tripdata.csv: cleaned 609,232 rows, inserted 0 new fact rows
+2026-10-08 10:44:30,486 | INFO | 202406-divvy-tripdata.csv: cleaned 710,705 rows, inserted 0 new fact rows
+2026-10-08 10:45:06,409 | INFO | 202407-divvy-tripdata.csv: cleaned 748,953 rows, inserted 0 new fact rows
+2026-10-08 10:45:40,141 | INFO | 202408-divvy-tripdata.csv: cleaned 755,626 rows, inserted 0 new fact rows
+2026-10-08 10:46:17,190 | INFO | 202409-divvy-tripdata.csv: cleaned 821,268 rows, inserted 0 new fact rows
+2026-10-08 10:46:44,853 | INFO | 202410-divvy-tripdata.csv: cleaned 616,268 rows, inserted 0 new fact rows
+2026-10-08 10:47:01,466 | INFO | 202411-divvy-tripdata.csv: cleaned 335,028 rows, inserted 0 new fact rows
+2026-10-08 10:47:11,290 | INFO | 202412-divvy-tripdata.csv: cleaned 178,372 rows, inserted 0 new fact rows
+2026-10-08 10:47:17,861 | INFO | 202501-divvy-tripdata.csv: cleaned 138,688 rows, inserted 0 new fact rows
+2026-10-08 10:47:25,064 | INFO | 202502-divvy-tripdata.csv: cleaned 151,876 rows, inserted 0 new fact rows
+2026-10-08 10:47:38,490 | INFO | 202503-divvy-tripdata.csv: cleaned 298,142 rows, inserted 0 new fact rows
+2026-10-08 10:47:55,489 | INFO | 202504-divvy-tripdata.csv: cleaned 371,333 rows, inserted 0 new fact rows
+2026-10-08 10:48:17,774 | INFO | 202505-divvy-tripdata.csv: cleaned 502,442 rows, inserted 0 new fact rows
+2026-10-08 10:48:48,392 | INFO | 202506-divvy-tripdata.csv: cleaned 678,885 rows, inserted 0 new fact rows
+2026-10-08 10:49:22,171 | INFO | 202507-divvy-tripdata.csv: cleaned 763,412 rows, inserted 0 new fact rows
+2026-10-08 10:49:56,939 | INFO | 202508-divvy-tripdata.csv: cleaned 790,151 rows, inserted 0 new fact rows
+2026-10-08 10:50:11,444 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-71' coro=<Kernel.dispatch_control() running at /Users/Projects/comprehensive_divvy_bike_sharing_analytics/.venv/lib/python3.14/site-packages/ipykernel/kernelbase.py:372> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ZMQStream._run_callback.<locals>._log_error() at /Users/Projects/comprehensive_divvy_bike_sharing_analytics/.venv/lib/python3.14/site-packages/zmq/eventloop/zmqstream.py:564]>
+2026-10-08 10:50:17,752 | INFO | Discovered 32 source files in /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master
+2026-10-08 10:50:24,515 | INFO | 202401-divvy-tripdata.csv: cleaned 144,776 rows, inserted 0 new fact rows
+2026-10-08 10:50:34,265 | INFO | 202402-divvy-tripdata.csv: cleaned 223,136 rows, inserted 0 new fact rows
+2026-10-08 10:50:34,948 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-75' coro=<Kernel.dispatch_control() running at /Users/Projects/comprehensive_divvy_bike_sharing_analytics/.venv/lib/python3.14/site-packages/ipykernel/kernelbase.py:372> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ZMQStream._run_callback.<locals>._log_error() at /Users/Projects/comprehensive_divvy_bike_sharing_analytics/.venv/lib/python3.14/site-packages/zmq/eventloop/zmqstream.py:564]>
+2026-10-08 10:53:29,525 | INFO | Discovered 33 source files in /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master
+2026-10-08 10:53:52,698 | INFO | 202401-divvy-tripdata.csv: cleaned 144,776 rows, inserted 0 new fact rows
+2026-10-08 10:54:19,276 | INFO | 202402-divvy-tripdata.csv: cleaned 223,136 rows, inserted 0 new fact rows
+2026-10-08 10:54:45,624 | INFO | 202403-divvy-tripdata.csv: cleaned 301,581 rows, inserted 0 new fact rows
+2026-10-08 10:55:09,046 | INFO | 202404-divvy-tripdata.csv: cleaned 414,837 rows, inserted 0 new fact rows
+2026-10-08 10:55:37,361 | INFO | 202405-divvy-tripdata.csv: cleaned 609,232 rows, inserted 0 new fact rows
+2026-10-08 10:56:09,060 | INFO | 202406-divvy-tripdata.csv: cleaned 710,705 rows, inserted 0 new fact rows
+2026-10-08 10:56:43,272 | INFO | 202407-divvy-tripdata.csv: cleaned 748,953 rows, inserted 0 new fact rows
+2026-10-08 10:57:16,453 | INFO | 202408-divvy-tripdata.csv: cleaned 755,626 rows, inserted 0 new fact rows
+2026-10-08 10:57:51,612 | INFO | 202409-divvy-tripdata.csv: cleaned 821,268 rows, inserted 0 new fact rows
+2026-10-08 10:58:18,283 | INFO | 202410-divvy-tripdata.csv: cleaned 616,268 rows, inserted 0 new fact rows
+2026-10-08 10:58:33,166 | INFO | 202411-divvy-tripdata.csv: cleaned 335,028 rows, inserted 0 new fact rows
+2026-10-08 10:58:41,105 | INFO | 202412-divvy-tripdata.csv: cleaned 178,372 rows, inserted 0 new fact rows
+2026-10-08 10:58:47,384 | INFO | 202501-divvy-tripdata.csv: cleaned 138,688 rows, inserted 0 new fact rows
+2026-10-08 10:58:54,203 | INFO | 202502-divvy-tripdata.csv: cleaned 151,876 rows, inserted 0 new fact rows
+2026-10-08 10:59:07,190 | INFO | 202503-divvy-tripdata.csv: cleaned 298,142 rows, inserted 0 new fact rows
+2026-10-08 10:59:23,344 | INFO | 202504-divvy-tripdata.csv: cleaned 371,333 rows, inserted 0 new fact rows
+2026-10-08 10:59:45,039 | INFO | 202505-divvy-tripdata.csv: cleaned 502,442 rows, inserted 0 new fact rows
+2026-10-08 11:00:14,842 | INFO | 202506-divvy-tripdata.csv: cleaned 678,885 rows, inserted 0 new fact rows
+2026-10-08 11:00:47,611 | INFO | 202507-divvy-tripdata.csv: cleaned 763,412 rows, inserted 0 new fact rows
+2026-10-08 11:01:21,378 | INFO | 202508-divvy-tripdata.csv: cleaned 790,151 rows, inserted 0 new fact rows
+2026-10-08 11:01:52,038 | INFO | 202509-divvy-tripdata.csv: cleaned 714,747 rows, inserted 0 new fact rows
+2026-10-08 11:02:19,904 | INFO | 202510-divvy-tripdata.csv: cleaned 646,034 rows, inserted 0 new fact rows
+2026-10-08 11:02:35,510 | INFO | 202511-divvy-tripdata.csv: cleaned 356,594 rows, inserted 0 new fact rows
+2026-10-08 11:02:41,949 | INFO | 202512-divvy-tripdata.csv: cleaned 140,532 rows, inserted 0 new fact rows
+2026-10-08 11:02:48,189 | INFO | 202601-divvy-tripdata.csv: cleaned 137,779 rows, inserted 0 new fact rows
+2026-10-08 11:02:57,154 | INFO | 202602-divvy-tripdata.csv: cleaned 201,449 rows, inserted 0 new fact rows
+2026-10-08 11:03:10,977 | INFO | 202603-divvy-tripdata.csv: cleaned 317,030 rows, inserted 0 new fact rows
+2026-10-08 11:03:30,341 | INFO | 202604-divvy-tripdata.csv: cleaned 448,244 rows, inserted 0 new fact rows
+2026-10-08 11:03:58,454 | INFO | 202605-divvy-tripdata.csv: cleaned 653,695 rows, inserted 0 new fact rows
+2026-10-08 11:04:31,253 | INFO | 202606-divvy-tripdata.csv: cleaned 762,531 rows, inserted 0 new fact rows
+2026-10-08 11:05:08,650 | INFO | 202607-divvy-tripdata.csv: cleaned 869,026 rows, inserted 0 new fact rows
+2026-10-08 11:05:47,061 | INFO | 202608-divvy-tripdata.csv: cleaned 868,169 rows, inserted 0 new fact rows
+2026-10-08 11:06:21,161 | INFO | 202609-divvy-tripdata.csv: cleaned 770,541 rows, inserted 0 new fact rows
+2026-10-08 11:06:21,273 | INFO | Data-quality report written to /Users/Projects/comprehensive_divvy_bike_sharing_analytics/reports/etl_reports/etl_data_quality_report.csv
+2026-10-08 11:06:31,199 | INFO | Manifest updated: 0 new month(s) -> /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/ingested_files.txt
+2026-10-08 11:06:31,212 | INFO | Deleted /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/downloads (604 MB)
+2026-10-08 11:06:31,310 | INFO | Deleted /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master (3,156 MB)
+2026-10-08 11:06:31,311 | INFO | Total space freed: 3,760 MB
+2026-10-08 16:24:49,608 | INFO | Discovered 33 source files in /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master
+2026-10-08 16:25:11,722 | INFO | 202401-divvy-tripdata.csv: cleaned 144,776 rows, inserted 0 new fact rows
+2026-10-08 16:25:40,241 | INFO | 202402-divvy-tripdata.csv: cleaned 223,136 rows, inserted 0 new fact rows
+2026-10-08 16:26:07,931 | INFO | 202403-divvy-tripdata.csv: cleaned 301,581 rows, inserted 0 new fact rows
+2026-10-08 16:26:31,368 | INFO | 202404-divvy-tripdata.csv: cleaned 414,837 rows, inserted 0 new fact rows
+2026-10-08 16:26:58,792 | INFO | 202405-divvy-tripdata.csv: cleaned 609,232 rows, inserted 0 new fact rows
+2026-10-08 16:27:29,426 | INFO | 202406-divvy-tripdata.csv: cleaned 710,705 rows, inserted 0 new fact rows
+2026-10-08 16:28:01,554 | INFO | 202407-divvy-tripdata.csv: cleaned 748,953 rows, inserted 0 new fact rows
+2026-10-08 16:28:33,836 | INFO | 202408-divvy-tripdata.csv: cleaned 755,626 rows, inserted 0 new fact rows
+2026-10-08 16:29:11,089 | INFO | 202409-divvy-tripdata.csv: cleaned 821,268 rows, inserted 0 new fact rows
+2026-10-08 16:29:37,603 | INFO | 202410-divvy-tripdata.csv: cleaned 616,268 rows, inserted 0 new fact rows
+2026-10-08 16:29:52,300 | INFO | 202411-divvy-tripdata.csv: cleaned 335,028 rows, inserted 0 new fact rows
+2026-10-08 16:30:00,369 | INFO | 202412-divvy-tripdata.csv: cleaned 178,372 rows, inserted 0 new fact rows
+2026-10-08 16:30:06,704 | INFO | 202501-divvy-tripdata.csv: cleaned 138,688 rows, inserted 0 new fact rows
+2026-10-08 16:30:13,616 | INFO | 202502-divvy-tripdata.csv: cleaned 151,876 rows, inserted 0 new fact rows
+2026-10-08 16:30:26,625 | INFO | 202503-divvy-tripdata.csv: cleaned 298,142 rows, inserted 0 new fact rows
+2026-10-08 16:30:42,604 | INFO | 202504-divvy-tripdata.csv: cleaned 371,333 rows, inserted 0 new fact rows
+2026-10-08 16:31:04,015 | INFO | 202505-divvy-tripdata.csv: cleaned 502,442 rows, inserted 0 new fact rows
+2026-10-08 16:31:32,915 | INFO | 202506-divvy-tripdata.csv: cleaned 678,885 rows, inserted 0 new fact rows
+2026-10-08 16:32:05,386 | INFO | 202507-divvy-tripdata.csv: cleaned 763,412 rows, inserted 0 new fact rows
+2026-10-08 16:32:39,020 | INFO | 202508-divvy-tripdata.csv: cleaned 790,151 rows, inserted 0 new fact rows
+2026-10-08 16:33:09,533 | INFO | 202509-divvy-tripdata.csv: cleaned 714,747 rows, inserted 0 new fact rows
+2026-10-08 16:33:36,975 | INFO | 202510-divvy-tripdata.csv: cleaned 646,034 rows, inserted 0 new fact rows
+2026-10-08 16:33:52,349 | INFO | 202511-divvy-tripdata.csv: cleaned 356,594 rows, inserted 0 new fact rows
+2026-10-08 16:33:58,703 | INFO | 202512-divvy-tripdata.csv: cleaned 140,532 rows, inserted 0 new fact rows
+2026-10-08 16:34:04,995 | INFO | 202601-divvy-tripdata.csv: cleaned 137,779 rows, inserted 0 new fact rows
+2026-10-08 16:34:13,899 | INFO | 202602-divvy-tripdata.csv: cleaned 201,449 rows, inserted 0 new fact rows
+2026-10-08 16:34:27,669 | INFO | 202603-divvy-tripdata.csv: cleaned 317,030 rows, inserted 0 new fact rows
+2026-10-08 16:34:46,915 | INFO | 202604-divvy-tripdata.csv: cleaned 448,244 rows, inserted 0 new fact rows
+2026-10-08 16:35:14,800 | INFO | 202605-divvy-tripdata.csv: cleaned 653,695 rows, inserted 0 new fact rows
+2026-10-08 16:35:47,507 | INFO | 202606-divvy-tripdata.csv: cleaned 762,531 rows, inserted 0 new fact rows
+2026-10-08 16:36:24,368 | INFO | 202607-divvy-tripdata.csv: cleaned 869,026 rows, inserted 0 new fact rows
+2026-10-08 16:37:01,441 | INFO | 202608-divvy-tripdata.csv: cleaned 868,169 rows, inserted 0 new fact rows
+2026-10-08 16:37:35,325 | INFO | 202609-divvy-tripdata.csv: cleaned 770,541 rows, inserted 0 new fact rows
+2026-10-08 16:37:35,486 | INFO | Data-quality report written to /Users/Projects/comprehensive_divvy_bike_sharing_analytics/reports/etl_reports/etl_data_quality_report.csv
+2026-10-08 16:37:45,081 | INFO | Manifest updated: 0 new month(s) -> /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/ingested_files.txt
+2026-10-08 16:37:45,096 | INFO | Deleted /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/downloads (604 MB)
+2026-10-08 16:37:45,194 | INFO | Deleted /Users/Projects/comprehensive_divvy_bike_sharing_analytics/data/csv_master (3,156 MB)
+2026-10-08 16:37:45,195 | INFO | Total space freed: 3,760 MB
