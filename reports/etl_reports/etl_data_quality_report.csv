@@ -31,4 +31,4 @@ file,status,error,rows_in,dropped_missing_ride_id,dropped_duplicate_ride_id,drop
 202606-divvy-tripdata.csv,success,,762550,0,0,0,19,0,0,21124,20444,679,1,762531,0
 202607-divvy-tripdata.csv,success,,869051,0,0,0,25,0,0,23023,22242,780,1,869026,0
 202608-divvy-tripdata.csv,success,,868191,0,0,0,22,0,0,21505,20832,670,3,868169,0
-202609-divvy-tripdata.csv,success,,770562,0,0,0,21,0,0,19173,18538,633,2,770541,770541
+202609-divvy-tripdata.csv,success,,770562,0,0,0,21,0,0,19173,18538,633,2,770541,0
