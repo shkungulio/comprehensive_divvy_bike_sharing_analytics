@@ -1,5 +1,5 @@
 # Divvy Data Quality Report
-**Run timestamp (UTC):** 2026-10-08T21:49:09+00:00  
+**Run timestamp (UTC):** 2026-10-09T22:22:53+00:00  
 **Rows assessed (fact_trip):** 16,440,836  
 **Overall Quality Score:** 90.5 / 100 (Grade A)
 
