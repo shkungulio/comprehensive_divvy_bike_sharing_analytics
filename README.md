@@ -250,7 +250,6 @@ The Prophet model forecasts system-wide daily ridership 28 days ahead (Oct 1 –
 
 M.S. Data Analytics,
 
-Maryville University of Saint Louis
 
 ---
 
