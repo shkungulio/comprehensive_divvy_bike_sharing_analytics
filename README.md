@@ -17,7 +17,7 @@ This project builds a complete analytics pipeline for [Divvy](https://divvybikes
 
 The pipeline collects, cleans, models, and analyzes **16.44 million individual bike trips** spanning **January 1, 2024 – September 30, 2026** (1,004 consecutive days, no gaps), stores them in a normalized PostgreSQL star schema, audits their quality independently of the ETL process, extracts business insights from the **16.02M valid trips** that remain after flagged anomalies are excluded, and forecasts future ridership using statistically validated time-series models.
 
-**Why this project matters for recruiters:** it shows the full data science lifecycle — data acquisition, database design, ETL engineering, data quality auditing, exploratory analysis, and forecasting/model evaluation — applied to a realistic, messy, large-scale public dataset, using the same CRISP-DM framework used in industry. It also reports its own limitations honestly (see [Known Limitations](#known-limitations)): every notebook ends with a candid list of open issues, and several findings in this README are explicitly labelled as hypotheses rather than confirmed causes.
+This project shows the full data science lifecycle — data acquisition, database design, ETL engineering, data quality auditing, exploratory analysis, and forecasting/model evaluation — applied to a realistic, messy, large-scale public dataset, using the same CRISP-DM framework used in industry. It also reports its own limitations honestly (see [Known Limitations](#known-limitations)): every notebook ends with a candid list of open issues, and several findings in this README are explicitly labelled as hypotheses rather than confirmed causes.
 
 ### Headline Results
 
